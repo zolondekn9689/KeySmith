@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.AddScene"
+            prefHeight="600.0" prefWidth="800.0" >
+
+    <top>
+        <VBox>
+            <ToolBar>
+                <Button text="Menu" onAction="#onBack"/>
+                <Button  text="Add" onAction="#addBtn"/>
+                <Button text="Clear" onAction="#clearBtn"/>
+                <Button text="View All" onAction="#onView"/>
+            </ToolBar>
+            <Label text="Enter information: "/>
+        </VBox>
+
+
+    </top>
+    <center>
+        <VBox>
+            <GridPane vgap="20" hgap="20" style="-fx-padding: 20 20 20 20" >
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="0">Website Name: </Label>
+                <Label GridPane.rowIndex="1" GridPane.columnIndex="0">Username: </Label>
+                <Label GridPane.rowIndex="2" GridPane.columnIndex="0">Password: </Label>
+                <Label GridPane.rowIndex="3" GridPane.columnIndex="0">Email Associated: </Label>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="0">Website: </Label>
+                <Label GridPane.rowIndex="5" GridPane.columnIndex="0">Additional Info:</Label>
+
+                <TextField GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="nameField"/>
+                <TextField GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="userName"/>
+                <TextField GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="passwordField"/>
+                <TextField GridPane.rowIndex="3" GridPane.columnIndex="1" fx:id="email"/>
+                <TextField GridPane.rowIndex="4" GridPane.columnIndex="1" fx:id="websiteField"/>
+                <TextArea GridPane.rowIndex="5" GridPane.columnIndex="1" fx:id="infoField"/>
+
+
+
+            </GridPane>
+
+        </VBox>
+
+    </center>
+
+
+</BorderPane>

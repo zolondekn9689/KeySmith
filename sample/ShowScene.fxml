@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.ShowScene"
+            prefHeight="600.0" prefWidth="800.0">
+
+
+
+    <top>
+
+            <ToolBar>
+                <Button text="Menu" onAction="#onBack"/>
+                <Button text="Add" onAction="#onAdd"/>
+                <TextField fx:id="searchToDelete"/>
+                <Button text="Delete" onAction="#Delete" alignment="TOP_RIGHT"/>
+
+            </ToolBar>
+
+
+
+    </top>
+    <center>
+        <ScrollPane>
+            <GridPane hgap="25" vgap="15" fx:id="grid" style="-fx-padding: 20 20 20 20">
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Name"/>
+                <Label GridPane.columnIndex="1" GridPane.rowIndex="1" text="Username"/>
+                <Label GridPane.columnIndex="2" GridPane.rowIndex="1" text="Password"/>
+                <Label GridPane.columnIndex="3" GridPane.rowIndex="1" text="Email "/>
+                <Label GridPane.columnIndex="4" GridPane.rowIndex="1" text="URL or Website"/>
+                <Label GridPane.columnIndex="5" GridPane.rowIndex="1" text="Extra Information"/>
+            </GridPane>
+        </ScrollPane>
+
+    </center>
+
+
+</BorderPane>

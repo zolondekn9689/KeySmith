@@ -1,0 +1,36 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ToolBar?>
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml" minHeight="600" minWidth="800" maxWidth="800">
+
+    <center>
+        <GridPane style="-fx-padding: 20 20 20 20">
+            <Label text="Welcome to KeySmith! Are you tired of recording all your passwords with pen and pencil? Are you tired of
+            forgetting? I bet you are. Welcome to KeySmith, where all of your passwords could be stored in one place without any risk of losing your passwords. This is mean't to be a simple and practical software mean't to do what you cannot do. "
+
+
+             GridPane.columnIndex="0" GridPane.rowIndex="0" wrapText="true"/>
+
+            <Label text="Why did I create this application? Well I created this to help me record my passwords whenever I forget them.
+Without leaving the computer." GridPane.columnIndex="0" GridPane.rowIndex="1" wrapText="true" style="-fx-padding: 20 20 20 20"/>
+            <Label text="Contact Email: nick.zolondek@gmail.com" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        </GridPane>
+    </center>
+
+    <bottom>
+        <ToolBar>
+            <Button fx:id="addBtn" text="Add information" onAction="#onAdd"/>
+            <Button fx:id="showBtn" text="Show Information" onAction="#onShow"/>
+        </ToolBar>
+    </bottom>
+
+
+
+
+
+</BorderPane>
